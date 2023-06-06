@@ -1,0 +1,28 @@
+.livelineContainer {
+  position: relative;
+  margin-left: 5rem;
+}
+
+.liveline {
+  position: absolute;
+  width: 1rem;
+  z-index: 30;
+}
+
+.livelineHead {
+}
+
+.livelineBody {
+  width: 1px;
+  background: rgb(44, 122, 123);
+  pointer-events: none;
+  height: 100vh;
+  margin-left: 1px;
+}
+
+.livelineHead {
+  width: 3px;
+  height: 2.5rem;
+  background: rgb(44, 122, 123);
+  pointer-events: none;
+}

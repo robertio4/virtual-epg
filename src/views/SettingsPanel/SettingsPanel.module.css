@@ -1,0 +1,11 @@
+.container {
+  max-width: 40rem;
+  width: 95%;
+  margin: 1rem 0 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: bold;
+}

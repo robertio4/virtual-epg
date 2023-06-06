@@ -1,0 +1,59 @@
+.container {
+  padding: 4px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.info {
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7rem;
+  height: 100%;
+  border-radius: 0.6rem;
+  padding: 0.6rem 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out 0s;
+  z-index: 1;
+  background: linear-gradient(to right, rgb(26, 32, 44), rgb(26, 32, 44));
+}
+
+.info:hover,
+.focused {
+  background: linear-gradient(to right, rgb(5, 25, 55), rgb(0, 35, 96));
+}
+
+.live {
+  background: linear-gradient(
+    to right,
+    rgb(5, 25, 55),
+    rgb(0, 35, 96),
+    rgb(0, 46, 179)
+  );
+}
+
+.title {
+  font-size: 0.7rem;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: rgb(209, 209, 209);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hours {
+  display: flex;
+  align-items: center;
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: rgb(113, 128, 150);
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

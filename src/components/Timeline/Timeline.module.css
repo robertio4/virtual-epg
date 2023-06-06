@@ -1,0 +1,50 @@
+.timeline {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  font-size: 1rem;
+  background-color: #171923;
+  margin-left: 5rem;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.timelineWithSidebar {
+  margin-left: 0rem;
+}
+
+.timeline div:first-child {
+  align-items: start;
+}
+
+.timeline div:first-child div:first-child {
+  margin-left: 0 !important;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+}
+
+.hour {
+  color: #a0aec0;
+  font-size: 0.8rem;
+}
+
+.dividerContainer {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -webkit-align-items: end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  padding-bottom: 6px;
+}
+
+.divider {
+  background: #718096;
+  height: 0.7rem;
+  width: 1px;
+}
