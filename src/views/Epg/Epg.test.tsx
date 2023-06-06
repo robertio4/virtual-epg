@@ -24,6 +24,7 @@ describe("Epg_function", () => {
     const parentRef = { current: { scrollTo: vi.fn() } };
     const { getByText } = render(
       <SettingsContext.Provider value={initContext}>
+        {/* @ts-ignore */}
         <NowBtn parentRef={parentRef} />
       </SettingsContext.Provider>
     );
@@ -52,9 +53,11 @@ describe("Epg_function", () => {
           { id: 2, name: "Channel 2" },
         ],
       };
+      // @ts-ignore
       vi.spyOn(global, "fetch").mockResolvedValueOnce({
         json: vi.fn().mockResolvedValueOnce(mockData),
       });
+      // @ts-ignore
       const { result, waitForNextUpdate } = renderHook(() => useDataEpg());
       await waitForNextUpdate();
       expect(result.current.channels).toEqual(mockData.channels);

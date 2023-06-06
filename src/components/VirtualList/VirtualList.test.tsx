@@ -33,7 +33,11 @@ describe("VirtualList_function", () => {
   // Tests that the component handles the case when parentRef is null.
   it("test_parent_ref_is_null", () => {
     render(
-      <VirtualList<Schedule> data={data} parentRef={null}>
+      <VirtualList<Schedule>
+        data={data}
+        // @ts-ignore
+        parentRef={null}
+      >
         {(data) => <div>{data.title}</div>}
       </VirtualList>
     );

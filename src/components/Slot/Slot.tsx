@@ -1,4 +1,3 @@
-import { s } from "vitest/dist/types-dea83b3d.js";
 import { MILLISECONDS_BY_MINUTE, SIZE_RATIO } from "../../constants";
 import {
   SettingsContextType,

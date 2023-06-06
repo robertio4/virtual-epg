@@ -41,6 +41,7 @@ describe("NowBtn_function", () => {
     const parentRef = { current: { scrollTo: vi.fn() } };
     const { getByText } = render(
       <SettingsContext.Provider value={initContext}>
+        {/* @ts-ignore */}
         <NowBtn parentRef={parentRef} />
       </SettingsContext.Provider>
     );
